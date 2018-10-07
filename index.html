@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <link href="styles.css" rel="stylesheet">
 
     <title>
-        CV Ivan Shelest
+      CV Ivan Shelest
     </title>
 
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <img src="https://picjumbo.com/wp-content/uploads/standing-alone-1080x720.jpg" alt="Photo of Ivan">
+      <img src="https://picjumbo.com/wp-content/uploads/standing-alone-1080x720.jpg" alt="Photo of Ivan">
         <h1>Ivan Shelest</h1>
         <h2>Contacts</h2>
         <ul>
-            <li>Phone:<br><span>+375 29 777 77 77</span></li>
-            <li>Address:<br><address>220001, Lenina str. 10, Minsk, Belarus</address></li>
-            <li>e-mail:<br><span>ivan@gmail.com</span></li>
+          <li>Phone:<br><span>+375 29 777 77 77</span></li>
+          <li>Address:<br><address>220001, Lenina str. 10, Minsk, Belarus</address></li>
+          <li>e-mail:<br><span>ivan@gmail.com</span></li>
         </ul>
         <h2>Summary</h2>
         <p>More than 1 month of extended experience as a Front-End Developer.
@@ -25,23 +25,25 @@
             Strong communication, interpersonal, intuitive, planning, analysis, troubleshooting, and leadership skills</p>
         <h2>Skills</h2>
         <ul class="skills">
-            <li>HTML5<br><progress max="100" value="50"></progress></li>
-            <li>CSS<br><progress max="100" value="40"></progress></li>
-            <li>JavaScript<br><progress max="100" value="10"></progress></li>
+          <li>HTML5<br><progress max="100" value="50"></progress></li>
+          <li>CSS<br><progress max="100" value="40"></progress></li>
+          <li>JavaScript<br><progress max="100" value="10"></progress></li>
             
-            <li>VS Code<br><progress max="100" value="25"></progress></li>
-            <li>Adobe Photoshop<br><progress max="100" value="90"></progress></li>
-            <li>Adobe Illustrator<br><progress max="100" value="85"></progress></li>
+          <li>VS Code<br><progress max="100" value="25"></progress></li>
+          <li>Adobe Photoshop<br><progress max="100" value="90"></progress></li>
+          <li>Adobe Illustrator<br><progress max="100" value="85"></progress></li>
         </ul>
         <h2>Code Samples</h2>
         <h3>Check bracket pairs</h3>
-        <details><summary>View code</summary><pre>
+        <details>
+          <summary>View code</summary>
+          <pre>
 function check(str, bracketsConfig) {
 
     const openStack = [];
     let pairIndex;
     
-    for (let i = 0, strLen = str.length; i < strLen; i++) {
+    for (let i = 0, strLen = str.length; i &lt; strLen; i++) {
         if (findConfig(i) && bracketsConfig[pairIndex][0] === str[i]) {
         //check for closing identic bracket case
         let pairIdentic = bracketsConfig[pairIndex][0] === bracketsConfig[pairIndex][1];
@@ -61,10 +63,10 @@ function check(str, bracketsConfig) {
         
     //find bracket pair in config and change pairIndex
     function findConfig(i) {
-        for (let j = 0, cLen = bracketsConfig.length; j <= cLen; j++) {
-            //if (i > str.length || !i) break;
+        for (let j = 0, cLen = bracketsConfig.length; j &lt;= cLen; j++) {
+            //if (i &gt; str.length || !i) break;
             let k = bracketsConfig[j].indexOf(str[i]); 
-            if (k >= 0 && str[i] === bracketsConfig[j][k]) {
+            if (k &gt;= 0 && str[i] === bracketsConfig[j][k]) {
                 pairIndex = j;
                 return true;
             } 
@@ -72,34 +74,37 @@ function check(str, bracketsConfig) {
     
     };
               
-};</pre></details>
+};</pre>
+        </details>
         <h3>Convert Celsius to Fahrenheit</h3>
-        <details><summary>View code</summary><pre>const warmup = (temperature) => temperature * 1.8 + 32;</pre></details>
+        <details>
+          <summary>View code</summary>
+            <pre>const warmup = (temperature) =&gt; temperature * 1.8 + 32;</pre>
+        </details>
         <h2>Experience</h2>
-            <h3>The Rolling Scopes School</h3>
-                <ul>
-                    <li><a href="https://github.com/ishelest/warmup">Warmup</a></li>
-                    <li><a href="https://github.com/ishelest/love-triangle">Love triangle</a></li>
-                    <li><a href="https://github.com/ishelest/quadratic-equation">Quadratic equation</a></li>
-                </ul>
-            <h3>Codeacademy</h3> 
-                <ul>
-                    <li><a href="https://www.codecademy.com/learn/learn-html">Introduction to HTML</a></li>
-                    <li><a href="https://www.codecademy.com/learn/learn-css">Learn CSS</a></li>
-                    <li><a href="https://www.codecademy.com/users/ishelest/achievements">All my badges</a></li>
-                </ul>
-            <h3>Freelance</h3>
-                <ul>
-                    <li><a href="https://dribbble.com">Dribbble</a></li>
-                    <li><a href="https://behance.com">Behance</a></li>
-                </ul>
-        </ul>
+          <h3>The Rolling Scopes School</h3>
+            <ul>
+              <li><a href="https://github.com/ishelest/warmup">Warmup</a></li>
+              <li><a href="https://github.com/ishelest/love-triangle">Love triangle</a></li>
+              <li><a href="https://github.com/ishelest/quadratic-equation">Quadratic equation</a></li>
+            </ul>
+          <h3>Codeacademy</h3> 
+            <ul>
+              <li><a href="https://www.codecademy.com/learn/learn-html">Introduction to HTML</a></li>
+              <li><a href="https://www.codecademy.com/learn/learn-css">Learn CSS</a></li>
+              <li><a href="https://www.codecademy.com/users/ishelest/achievements">All my badges</a></li>
+            </ul>
+          <h3>Freelance</h3>
+            <ul>
+              <li><a href="https://dribbble.com">Dribbble</a></li>
+              <li><a href="https://behance.com">Behance</a></li>
+            </ul>
         <h2>Education</h2>
-        <ul>
+          <ul>
             <li>Codeacademy: <span>HTML, CSS</span></li>
             <li>The Rolling Scopes School: <span>1st stage</span></li>
-        </ul>
+          </ul>
         <h2>English level: <span>A2</span></h2>
     </main>
-</body>
+  </body>
 </html>
